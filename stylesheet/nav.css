@@ -1,0 +1,522 @@
+.cate-nav, .mt-cates, .mt-cates i {
+    position: absolute
+}
+
+.cate-nav .J-nav-item{
+    height: 53px;
+}
+.cate-nav__item .nav-extralink, .cate-nav__item .nav-hotlink, .cate-nav__item .sperator, .nav-level1__label {
+    -webkit-font-smoothing: antialiased
+}
+
+.cate-nav, .cate-nav__item, .nav-level2 {
+    -webkit-backface-visibility: hidden
+}
+
+.base-sprite, .mt-cates {
+    background-image: url('../images/base.png');
+    background-repeat: no-repeat
+}
+
+.mt-cates {
+    top: 0;
+    border-bottom: none;
+    padding-left: 15px;
+    width: 231px;
+    height: 40px;
+    line-height: 38px;
+    cursor: default;
+    text-align: left;
+    font-weight: 400;
+    background-position: 0 -31px
+}
+
+.mt-cates i {
+    top: 10px;
+    left: 206px;
+    font-size: 18px;
+    line-height: 1
+}
+
+.mt-cates i.F-glob-caret-up, .nav-unfolded i.F-glob-caret-down {
+    display: none
+}
+
+.nav-unfolded i.F-glob-caret-up {
+    display: block
+}
+
+.cate-nav {
+/*    top: 40px;*/
+    width: 244px;
+    height: 477px;
+    border: 1px solid #eee;
+    border-top: none;
+    overflow: visible;
+    background: #fafafa;
+    line-height: 22px;
+    font-size: 12px;
+    z-index: 1
+}
+
+.nav-active .nav-level2-indication, .nav-active dl {
+    -webkit-transform: translateX(8px);
+    transform: translate(8px)
+}
+
+.cate-nav__item {
+    position: relative
+}
+
+.cate-nav__item .nav-level2-indication, .cate-nav__item dl {
+    -webkit-transition: -webkit-transform .2s linear;
+    -moz-transition: -moz-transform .2s linear;
+    -o-transition: -o-transform .2s linear;
+    -webkit-backface-visibility: hidden
+}
+
+.cate-nav__item:hover {
+    *cursor: default
+}
+
+.cate-nav__item a:hover {
+    color: #2bb8aa;
+    text-decoration: none
+}
+
+.cate-nav__item .sperator {
+    margin: 0 1px;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.cate-nav__item .nav-extralink {
+    *zoom: 1;
+    *height: 22px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333
+}
+
+.cate-nav__item .nav-extralink:hover {
+    color: #2bb8aa
+}
+
+.cate-nav__item .nav-hotlink {
+    display: inline-block;
+    *display: inline;
+    display: none;
+    margin: 2px 0 0 8px;
+    padding: 3px;
+    border-left: 1px solid #eee;
+    vertical-align: top;
+    height: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    color: #fff;
+    background: #2bb8aa;
+    *zoom: 1;
+    border-radius: 3px
+}
+
+.nav-level1 dl, .nav-level1-inner {
+    height: 42px;
+    overflow: hidden
+}
+
+.cate-nav__item .nav-hotlink:hover {
+    color: #fff;
+    text-decoration: underline
+}
+
+.nav-level1 {
+    position: relative;
+    margin: 0 10px;
+    padding: 5px 0 4px 5px;
+    border-top: 1px solid #eee;
+    text-align: right
+}
+
+.nav-level1 dl {
+    line-height: 42px;
+    padding-right: 16px
+}
+
+.nav-level1 dt {
+    float: left;
+    min-width: 94px;
+    text-align: left
+}
+
+.nav-level1--first {
+    border-top: none
+}
+
+.nav-level1__label {
+    display: inline;
+    *display: inline;
+    *zoom: 1;
+    height: 22px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    vertical-align: top
+}
+
+.nav-level1__label:hover {
+    text-decoration: none
+}
+
+.nav-level1__item {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right: 2px;
+    line-height: 42px
+}
+
+.nav-level1__item a {
+    color: #999;
+    vertical-align: top
+}
+
+.nav-level2 {
+    position: absolute;
+    top: 0;
+    left: 244px;
+    _left: 229px;
+    padding: 12px 30px 0 20px;
+    width: 285px;
+    line-height: 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-left: 0;
+    box-shadow: inset 4px 0 5px -1px #ddd
+}
+
+.nav-level2-label {
+    padding-left: 2px;
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiasd
+}
+
+.nav-level2-indication {
+    position: absolute;
+    left: 210px;
+    top: 50%;
+    margin-top: -.5em;
+    font-size: 12px;
+    line-height: 1;
+    color: #ddd;
+    _top: 20px;
+    _margin-top: 0
+}
+
+.nav-level2-tile {
+    margin-bottom: 11px;
+    padding-top: 11px;
+    border-top: 1px dotted #ddd;
+    overflow: hidden;
+    _zoom: 1
+}
+
+.nav-level2-tile--first {
+    border-top: none;
+    padding-top: 0
+}
+
+.nav-level2__label {
+    color: #bbb;
+    font-weight: 700;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased
+}
+
+.nav-level2__item {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 0 12px;
+    margin: 8px 0;
+    white-space: nowrap;
+    border-left: 1px solid #ddd;
+    color: #666;
+    vertical-align: top
+}
+
+.nav-level2-inner {
+    margin-left: -10px
+}
+
+.nav-level2-inner .bribe {
+    color: #f76120
+}
+
+.nav-waterfall {
+    width: auto;
+    height: 477px;
+    padding: 0;
+    white-space: nowrap;
+    vertical-align: top;
+    min-width: 150px;
+    border-top: none;
+    _width: expression(this.scrollHeight < 151 ? "150px" : auto)
+}
+
+.nav-waterfall .nav-level2-item {
+    display: inline-block;
+    vertical-align: top
+}
+
+.nav-waterfall .nav-level2-keywords {
+    white-space: nowrap;
+    padding: 16px 10px 0
+}
+
+.nav-waterfall .nav-level2-keywords .nav-level2-keywords--title {
+    padding-left: 10px;
+    margin-bottom: 16px
+}
+
+.nav-waterfall .nav-level2-keywords .nav-level2-keywords--title a {
+    color: #333;
+    font-size: 20px;
+    line-height: 24px
+}
+
+.nav-waterfall .nav-level2-keywords .nav-level2-keywords--title a:hover {
+    color: #2bb8aa;
+    text-decoration: none
+}
+
+.nav-waterfall .nav-level2-keywords .nav-level2-keywords--content {
+    width: 120px;
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden
+}
+
+.nav-waterfall .nav-level2-keywords .nav-level2-keywords--content .keywords__item {
+    color: #666;
+    font-size: 12px;
+    line-height: 24px
+}
+
+.nav-waterfall .nav-level2-keywords .nav-level2-keywords--content .keywords__item:hover {
+    color: #2bb8aa;
+    text-decoration: none
+}
+
+.nav-waterfall .nav-level2-keywords .nav-level2-keywords--content .bribe {
+    color: #f76120
+}
+
+.nav-waterfall .nav-level2-poi {
+    width: 120px;
+    padding: 16px 10px 0
+}
+
+.nav-waterfall .nav-level2-poi .nav-level2-poi--title {
+    padding-left: 10px;
+    color: #333;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px
+}
+
+.nav-waterfall .nav-level2-poi .nav-level2-poi--title a {
+    color: #333
+}
+
+.nav-waterfall .nav-level2-poi .nav-level2-poi--title a:hover {
+    color: #2bb8aa
+}
+
+.nav-waterfall .nav-level2-poi .nav-level2-poi--content {
+    padding-left: 10px
+}
+
+.nav-waterfall .nav-level2-poi .nav-level2-poi--content a {
+    display: block;
+    color: #666;
+    line-height: 24px;
+    font-size: 12px
+}
+
+.nav-waterfall .nav-level2-poi .nav-level2-poi--content a:hover {
+    color: #2bb8aa;
+    text-decoration: none
+}
+
+.nav-waterfall .nav-level2-poi .poi-item-img a {
+    margin-bottom: 5px
+}
+
+.nav-waterfall .nav-level2-poi .poi-item-img img {
+    width: 100px;
+    height: 30px
+}
+
+.nav-waterfall .nav-level2-poi--img {
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='fff6f6f6', endColorstr='#fff6f6f6');
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f6f6f6), to(#fff))
+}
+
+.nav-waterfall .nav-level2-poi--img .nav-level2-poi--title {
+    font-size: 16px
+}
+
+.nav-waterfall .nav-level2-event {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    padding-left: 10px;
+    display: block
+}
+
+.nav-waterfall .nav-level2-event .xtitle1 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #333;
+    display: block
+}
+
+.nav-waterfall .nav-level2-event .xtitle2 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    display: block;
+    padding-bottom: 5px
+}
+
+.nav-waterfall .nav-level2-event .title {
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    border: 1px solid #f76120;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-color: #f76120;
+    padding: 4px
+}
+
+.nav-waterfall .event--title {
+    position: absolute;
+    left: 10px;
+    background-color: rgba(255, 255, 255, .6);
+    top: 0;
+    margin-top: 17px;
+    padding: 10px;
+    z-index: 2
+}
+
+.nav-waterfall .event--img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1
+}
+
+.nav-waterfall .highimg {
+    width: 295px;
+    height: 210px
+}
+
+.nav-waterfall .highimg .event--img img {
+    width: 200px;
+    height: 167px
+}
+
+.nav-waterfall .shortimg {
+    width: 295px;
+    height: 140px
+}
+
+.nav-waterfall .shortimg .event--img img {
+    width: 155px;
+    height: 130px
+}
+
+.nav-waterfall .shortimgWide {
+    width: 370px
+}
+
+.nav-waterfall .shortimgWide .event--title {
+    padding-left: 30px
+}
+
+.nav-waterfall .shortimgNarrow .event--title {
+    padding-left: 10px
+}
+
+.hasEventBanner .nav-level2 {
+    min-width: 290px;
+    _width: expression(this.scrollHeight < 291 ? "290px" : auto)
+}
+
+.cateNavNew {
+    border-right: none;
+    width: 245px
+}
+
+.cateNavNew .cate-nav__item {
+    border-right: 1px solid #eee
+}
+
+.cateNavNew .nav-level2 {
+    left: 245px;
+    box-shadow: none
+}
+
+.cateNavNew .nav-level1 dt {
+    min-width: 95px
+}
+
+.cateNavNew .dropdown-menu--loading {
+    padding: 0
+}
+
+.cateNavNew .nav-active .nav-level2-indication, .cateNavNew .nav-active dl {
+    -webkit-transform: none;
+    transform: none
+}
+
+.cateNavNew:hover .nav-level1 {
+    margin: 0 0 0 10px;
+    padding: 5px 10px 4px 5px
+}
+
+.cateNavNew .cate-nav__item .nav-level2-indication, .cateNavNew .cate-nav__item dl {
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none
+}
+
+.cateNavNew .cate-nav__item:hover {
+    background-color: #fff;
+    border-right: 1px solid #fff
+}
+
+.cateNavNew .cate-nav__item:hover .nav-level2-indication {
+    display: none
+}
+
+.cateNavNew .cate-nav__item--no-l2:hover {
+    border-right: 1px solid #eee
+}
+
+:root .cateNavNew:hover {
+    border-left: 1px solid #bdbdc7;
+    border-bottom: 1px solid #bdbdc7
+}
+
+:root .cateNavNew:hover .nav-waterfall {
+    border-right: 1px solid #bdbdc7;
+    border-bottom: 1px solid #bdbdc7
+}

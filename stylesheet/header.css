@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+.site-top-nav-w {
+    height: 29px;
+    font-size: 12px;
+    border-top: 1px solid #eee;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px #ddd, 0 0 5px 3px #eee;
+    background: #f9f9f9;
+}
+
+.site-top-nav-z {
+    position: relative;
+    margin: 0 auto;
+    width: 1170px;
+    z-index: 90;
+}
+
+.cf:after {
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.cf:after, q:after, q:before {
+    content: '';
+}
+
+.basic-info {
+    float: left;
+    -webkit-backface-visibility: hidden;
+}
+
+.basic-info .keep, .basic-info .user-info {
+    padding: 6px 8px 6px 0;
+    height: 16px;
+    float: left;
+    vertical-align: top;
+}
+
+.basic-info .keep a {
+    color: #666;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.basic-info .keep a .icon-keep {
+    color: #666;
+    text-decoration: none;
+}
+
+.basic-info .keep a .icon-keep:before {
+    content: "\e91b";
+}
+
+.basic-info .keep a .F-glob-star:before {
+    content: "\e91a";
+    color: #f76120;
+}
+
+/*
+设置登录按钮样式
+*/
+.basic-info .user-info_login {
+    padding: 0 5px 0 10px;
+    color: #f76120;
+}
+
+/*
+设置注册按钮样式
+*/
+.basic-info .user-info_signup {
+    padding: 0 10px 0 5px;
+    color: #666;
+    border-right: 1px solid #ddd;
+}
+
+/*
+设置划过样式下划线
+*/
+.basic-info .user-info_login:hover, .basic-info .user-info_signup:hover {
+    text-decoration: underline;
+}
+
+/*设置手机美团下拉样式*/
+.basic-info .dropdown {
+    float: right;
+    vertical-align: top;
+    height: 16px;
+    position: relative;
+    /* padding: 6px 8px 6px 0;*/
+}
+
+.basic-info .dropdown .icon-mobile {
+    position: absolute;
+    left: 8px;
+}
+
+.basic-info .dropdown .tri_dropdown {
+    position: absolute;
+    top: 14px;
+    right: 7px;
+    border: 3px dashed transparent;
+    border-top: 3px solid #999;
+    -webkit-transition: -webkit-transform .3s linear;
+}
+
+.basic-info .dropdown .dropdown_toggle {
+    padding: 6px 20px 6px 22px;
+    position: relative;
+    display: inline-block;
+    height: 16px;
+    color: #666;
+    z-index: 93;
+    border-left:1px solid transparent;
+}
+
+.basic-info .dropdown .dropdown_menu {
+    width: 162px;
+    position: absolute;
+    display: none;
+    top:28px;
+    border: 1px solid #ddd;
+    color: #666;
+    background: #fff;
+    z-index: 92;
+    box-shadow: 1px 1px 2px rgba(203, 203, 203, .5);
+}
+
+.basic-info .dropdown .dropdown_menu .app-block {
+    width: 144px;
+    height: 113px;
+    padding: 10px;
+    display: block;
+    position: relative;
+}
+
+.basic-info .dropdown .dropdown_menu .app-block--last {
+    border-top: 1px dotted #ccc;
+}
+
+.basic-info .dropdown .dropdown_menu .app-block__title {
+    display: block;
+    margin: 1px auto 11px;
+    border-left: 2px solid #2bb8aa;
+    padding-left: 5px;
+    height: 10px;
+    line-height: 10px;
+    _height: 14px;
+    _line-height: 14px;
+    font-size: 12px;
+    color: #000;
+    width: 137px;
+}
+
+.app-block_content_mt {
+    margin: 5px auto 0px;
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: url('../images/meituan2dem.gif') no-repeat;
+}
+
+.app-block_content_my {
+    margin: 5px auto 0px;
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: url('../images/maoyan2dem.gif') no-repeat;
+}
+
+.app-block__arrow {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 67px;
+    font-size: 16px;
+    line-height: 1;
+    color: #2bb8aa
+}
+
+/*鼠标移动到下拉框上*/
+.basic-info .dropdown:hover .dropdown_menu {
+     display: block;
+}
+
+.basic-info .dropdown:hover .dropdown_toggle {
+     background:#fff;
+     color:#2bb8aa;
+     box-shadow: 1px 0px 2px rgba(203, 203, 203, 0.5);
+     border: 1px solid #ddd;
+     border-top:none;
+     border-bottom: 1px solid #fff;
+ }
+
+.basic-info .dropdown:hover .dropdown_toggle .tri_dropdown {
+    top:11px;
+    border-top-color:transparent;
+    border-bottom: 3px solid #2bb8aa;
+    -webkit-transition: -webkit-transform .3s linear;
+}
+/*a标签背景色变成指定*/
+.basic-info .dropdown .app-block:hover{
+    background: #f9f9f9;
+}
+/*右边箭头显示*/
+.basic-info .dropdown .app-block:hover .app-block__arrow{
+    display: block;
+}
+
+
+/*右边部分菜单*/
+.header_menu{
+    float: right;
+}
+
+/*.header_menu>li{
+    float: left;
+    height: 16px;
+    padding: 6px 8px;
+    _padding: 0 8px;
+    display: inline-block;
+    vertical-align: top;
+}*/
+
+.header_menu>li>a {
+    color: #666;
+}
+
+.header_menu .my_orders {
+    float: left;
+    height: 16px;
+    padding: 6px 8px;
+    _padding: 0 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+.header_menu a {
+    color: #666;
+}
+
+/*设置手机美团下拉样式*/
+.header_menu .dropdown{
+    position: relative;
+    float: left;
+    height: 16px;
+/*    padding: 6px 8px;
+    _padding: 0 8px;*/
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header_menu .dropdown .dropdown_toggle {
+    display: inline-block;
+    height: 16px;
+    padding: 6px 20px 6px 12px;
+    margin: 0 1px;
+    color: #666;
+    z-index: 93;
+    -webkit-backface-visibility: hidden;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.header_menu .dropdown a span{
+    display: inline-block;
+}
+
+/*菜单通用下拉三角样式*/
+.header_menu .dropdown .tri_dropdown {
+    position: absolute;
+    top: 14px;
+    right: 7px;
+    border: 3px dashed transparent;
+    border-top: 3px solid #999;
+    -webkit-transition: -webkit-transform .3s linear;
+}
+/*菜单通用竖线样式*/
+.header_menu .dropdown .vertical-bar {
+    position: absolute;
+    right: -2px;
+    top: 9px;
+    display: block;
+    height: 12px;
+    width: 1px;
+    background: #ddd;
+    z-index: 94;
+}
+
+.header_menu .dropdown .dropdown_menu {
+    position: absolute;
+    /*11111111*/
+    display: none;
+    top: 28px;
+    right: 1px;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    color: #666;
+    background: #fff;
+    z-index: 90;
+    box-shadow: 1px 1px 2px rgba(203,203,203,.5);
+}
+.header_menu .dropdown .dropdown_menu .dropdown_menu_item {
+    display: block;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    background: #fff;
+    color: #666;
+    transition: background .2s ease-in;
+}
+
+.header_menu .dropdown .dropdown-menu_account {
+    width: 80px;
+}
+
+/*hover下拉样式*/
+/*hover下拉按钮样式*/
+.header_menu .dropdown:hover .dropdown_toggle {
+    position: relative;
+    background:#fff;
+    color:#2bb8aa;
+    box-shadow: 1px 0px 2px rgba(203, 203, 203, 0.5);
+    border: 1px solid #ddd;
+    border-top:none;
+    border-bottom: 1px solid #fff;
+    z-index: 93;
+}
+/*hover下拉菜单样式*/
+.header_menu .dropdown:hover .dropdown_menu{
+    display: block;
+}
+/*hover下拉标题后 小三角变化*/
+.header_menu .dropdown:hover .tri_dropdown {
+    top:11px;
+    border-top-color:transparent;
+    border-bottom: 3px solid #2bb8aa;
+    -webkit-transition: -webkit-transform .3s linear;
+}
+
+/*hover下拉菜单项目样式*/
+.header_menu .dropdown .dropdown_menu_item:hover{
+    background: #f9f9f9;
+}
+/*hover项目后字体颜色变化*/
+.header_menu .dropdown .dropdown_menu_item:hover a{
+    color:#2bb8aa;
+}
+
+.header_menu .dropdown .dropdown_menu_cart, .header_menu .dropdown .dropdown_menu_his {
+    width: 219px;
+}
+.header_menu .dropdown-menu_his {
+    position: absolute;
+    display: block;
+    top: 27px;
+    right: 0;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    color: #666;
+    background: #fff;
+    z-index: 92;
+    box-shadow: 1px 1px 2px rgba(203,203,203,.5);
+}
+
+.header_menu .dropdown .dropdown_menu_his .dropdown_menu_item {
+    padding: 10px 13px;
+    border-bottom: 1px dotted #eee;
+    height: 55px;
+    overflow: hidden;
+    color: #666;
+    transition: background .2s ease-in;
+}
+
+.header_menu .dropdown_menu_his .dropdown_menu_item .deal-link {
+    padding: 0;
+    color: #666
+}
+
+.header_menu .dropdown_menu_his .dropdown_menu_item .deal-link:hover {
+    color: #2bb8aa;
+    text-decoration: none
+}
+
+.header_menu .dropdown_menu_his .dropdown_menu_item .deal-title {
+    height: 32px;
+    margin-bottom: 4px;
+    line-height: 16px;
+    overflow: hidden;
+    font-weight: 400
+}
+
+.header_menu .dropdown_menu_his .dropdown_menu_item .deal-cover {
+    float: left;
+    margin: 2px 10px 0 0
+}
+
+.header_menu .dropdown_menu_his .dropdown_menu_item .deal-price-w {
+    height: 18px;
+    display: block;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    _white-space: normal;
+    overflow: hidden
+}
+
+.header_menu .dropdown_menu_his .dropdown_menu_item .deal-price {
+    padding-right: 10px;
+    font: 700 12px/12px arial, sans-serif;
+    color: #f76120
+}
+
+.header_menu .dropdown_menu_his .dropdown_menu_item .old-price {
+    text-decoration: line-through;
+}
+
+.header_menu .dropdown_menu_his .dropdown_menu_item .del_link {
+    display: none;
+    color: #666;
+    float: right;
+}
+
+.header_menu .dropdown_menu_cart:hover .del_link{
+    display: inline-block;
+    z-index: 99;
+}
+
+.header_menu .dropdown_menu_his .dropdown_menu_item .del_link:hover {
+    text-decoration: underline;
+}
+.header_menu .dropdown_menu_his .clear {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.header_menu .dropdown_menu_his .clear a{
+    color: #2bb8aa;
+}
+
+.header_menu .dropdown_menu_his .clear a:hover{
+    text-decoration:underline;
+}
+
+.header_menu .dropdown .dropdown-menu_sever {
+    width:94px;
+}
+
+.header_menu .dropdown .dropdown-menu_saler {
+    width:99px;
+}
+
+.header_menu .dropdown .dropdown-menu_more {
+    width:82px;
+}
+
+.check-my-cart {
+    margin-bottom: 16px;
+    text-align: center;
+}
+.check-my-cart a {
+    margin-top: 24px;
+    color: #fff;
+}
+#cart_count{
+    font-style: normal;
+    color: #f76120;
+}

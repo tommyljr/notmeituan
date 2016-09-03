@@ -1,0 +1,159 @@
+.contentmenu_carousel{
+    width: 690px;
+    height: 319px;
+    overflow: hidden;
+    position: relative;
+}
+.contentmenu_carousel .carouselbox{
+    width: 4830px;
+    height: 317px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.contentmenu_carousel .carouselbox .carouselitem{
+    float:left;
+    width: 690px;
+}
+.contentmenu_carousel .carouselbox .subdiv{
+    width: 333px;
+    height: 307px;
+    padding-top: 10px;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.contentmenu_carousel .carouselbox .subdiv .carousel_img{
+    width: 333px;
+    height:232px;
+    border: none;
+}
+
+.contentmenu_carousel .carouselbox .subdiv .carousel_content{
+    width: 214px;
+    margin: 15px 0 10px;
+    border-right: 1px dotted #eee;
+    float: left;
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contentmenu_carousel .carouselbox .subdiv .carousel_content .xtitle {
+    display: block;
+    width: 214px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.contentmenu_carousel .carouselbox .subdiv .carousel_content .desc {
+    position: relative;
+    width: 214px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #999;
+}
+
+.contentmenu_carousel .carouselbox .subdiv .price {
+    font-size: 30px;
+    color: #f76120;
+    position: relative;
+    float: right;
+    width: 108px;
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 70px;
+    text-align: right;
+    font-weight: 400;
+}
+
+.contentmenu_carousel .carouselbox .carouselitem .carousel_left {
+    padding-right: 11px;
+    border-right: 1px solid #eee;
+}
+.contentmenu_carousel .carouselbox .carouselitem .carousel_right {
+    padding-left: 12px;
+}
+
+.discount {
+    background-image: url(../images/base.png);
+    background-repeat: no-repeat;
+}
+
+.contentmenu_carousel .carouselbox .discount {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 28px;
+    height: 37px;
+    padding: 13px 22px 0 12px;
+    color: #fff;
+    font-weight: 700;
+    font-family: arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    text-align: center;
+    background-position: 0 -830px;
+    z-index: 2;
+}
+
+.contentmenu_carousel .slider_next {
+    width: 60px;
+    background-position: 0 -228px;
+    right: 0;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    line-height: 39px;
+    position: absolute;
+    top: 140px;
+    height: 39px;
+    background-image: url(../images/slider/slider.png);
+    background-repeat: no-repeat;
+    display: none;
+    opacity: 0.6;
+}
+
+.contentmenu_carousel .slider_prev {
+    width: 30px;
+    background-position: 0 -150px;
+    left: 0;
+    position: absolute;
+    top: 140px;
+    height: 39px;
+    background-image: url(../images/slider/slider.png);
+    background-repeat: no-repeat;
+    display: none;
+    opacity: 0.6;
+}
+
+.contentmenu_carousel:hover .slider_prev,.contentmenu_carousel:hover .slider_next{
+    display: block;
+}
+
+.contentmenu_carousel .slider_prev:hover,.contentmenu_carousel .slider_next:hover{
+    opacity: 1;
+}
+.contentmenu_carousel .curpage{
+    font-size: 16px;
+    color: #fff;
+    line-height: 39px;
+    float: left;
+}
+.contentmenu_carousel .totalpage{
+    font-size: 16px;
+    color: #fff;
+    line-height: 39px;
+    float: left;
+}

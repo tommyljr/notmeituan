@@ -1,0 +1,99 @@
+*{margin: 0;padding: 0}
+html,body{
+    height: 300%;
+    width: 100%;
+}
+body {
+    font: 400 14px/1.5 "Hiragino Sans GB","WenQuanYi Micro Hei",tahoma,sans-serif;
+    color: #666;
+    background-color: #fff;
+    height: 300%;
+    width: 100%;
+}
+li{list-style: none}
+a {
+    color: #2bb8aa;
+    text-decoration: none;
+}
+
+em{font-style: normal}
+.tri {
+    height: 0;
+    width: 0;
+    line-height: 0;
+    font-size: 0;
+    border: 3px dashed transparent;
+}
+
+.btn, .btn-hot, .btn-normal {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    padding: 7px 20px 6px;
+    *padding: 4px 20px 2px;
+    *overflow: visible;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    letter-spacing: .1em;
+    text-align: center;
+    text-decoration: none;
+    border-width: 0 0 1px;
+    border-style: solid;
+    background-repeat: repeat-x;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer
+}
+
+.btn {
+    background-color: #2db3a6;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF2EC3B4', endColorstr='#FF2DB3A6');
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+    background-size: 100%;
+    background-image: -moz-linear-gradient(top,#2ec3b4,#2db3a6);
+    background-image: -webkit-linear-gradient(top,#2ec3b4,#2db3a6);
+    background-image: linear-gradient(to bottom,#2ec3b4,#2db3a6);
+}
+
+.btn-hot {
+    color: #fff;
+    background-color: #f76120;
+    border-color: #da3f02;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFF8901', endColorstr='#FFF76120');
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+    background-size: 100%;
+    background-image: -moz-linear-gradient(top,#ff8901,#f76120);
+    background-image: -webkit-linear-gradient(top,#ff8901,#f76120);
+    background-image: linear-gradient(to bottom,#ff8901,#f76120);
+}
+
+.btn-mini, .btn-small {
+    font-weight: 400;
+    -webkit-font-smoothing: initial;
+}
+
+.btn-small {
+    padding: 3px 20px;
+    font-size: 12px;
+}
+
+.btn-hot.hover, .btn-hot:focus, .btn-hot:hover {
+    color: #fff;
+    background-color: #ff8101;
+    border-color: #f76120;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF76120', endColorstr='#FFFF8101');
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+    background-size: 100%;
+    background-image: -moz-linear-gradient(top,#f76120,#ff8101);
+    background-image: -webkit-linear-gradient(top,#f76120,#ff8101);
+    background-image: linear-gradient(to bottom,#f76120,#ff8101);
+}
